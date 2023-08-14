@@ -35,6 +35,8 @@ class Run(Gtk.ApplicationWindow):
         self.prog = self.builder.get_object("prog")
 
 
+        if mixer.music.get_busy():
+            print("test")
 
 
 
@@ -73,6 +75,7 @@ class Run(Gtk.ApplicationWindow):
                     print(mixer.music.get_busy())
                     self.load = "1"
 
+
     def rewind_clicked_cb(self, button):
         mixer.music.set_pos(0)
         print("rewind")
@@ -97,8 +100,17 @@ class Run(Gtk.ApplicationWindow):
         self.dialog.hide()
         self.load = "0"
         self.audio = eyed3.load(self.mfile)
-        self.window.set_title(self.audio.tag.title)
-        self.header.set_subtitle(self.audio.tag.artist)
+        duration = eyed3.load(self.mfile).info.time_secs
+        print(duration)
+        try:
+            self.window.set_title(self.audio.tag.title)
+        except AttributeError:
+            self.window.set_title("Unknown Song Name")
+
+        try:
+            self.header.set_subtitle(self.audio.tag.artist)
+        except AttributeError:
+            self.header.set_subtitle("Unknown Artist")
 
 
 
