@@ -27,6 +27,8 @@ class Run(Gtk.ApplicationWindow):
         self.window.show_all()
         self.menub = self.builder.get_object("menub")
 
+    
+
         self.window.connect("destroy", Gtk.main_quit)
         self.playimg = self.builder.get_object("playimg")
         self.play = self.builder.get_object("play")
@@ -40,8 +42,8 @@ class Run(Gtk.ApplicationWindow):
 
     def aboutbutton_clicked_cb(self, button):
         self.about = self.builder.get_object("about")
+        self.about.connect("destroy", Gtk.main_quit)
         self.about.show_all()
-
     def aboutok_clicked_cb(self, button):
         self.about.hide()
 
