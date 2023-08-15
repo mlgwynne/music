@@ -70,6 +70,13 @@ class Run(Gtk.ApplicationWindow):
         print("rewind")
 
     def file_clicked_cb(self, dialog):
+        if self.mfile == "0":
+            print("*file dialog opens*")
+        else:
+            self.play.set_image(self.playimg)
+            mixer.music.pause()
+
+
         self.dialog = self.builder.get_object("filedialog")
         self.dialog.show_all()
         if self.f == "0":
