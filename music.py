@@ -76,7 +76,6 @@ class Run(Gtk.ApplicationWindow):
             self.play.set_image(self.playimg)
             mixer.music.pause()
 
-
         self.dialog = self.builder.get_object("filedialog")
         self.dialog.show_all()
         if self.f == "0":
