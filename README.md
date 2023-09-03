@@ -16,6 +16,5 @@ bad.
   -  Windows: run under WSL or MINGW, hopefully stuff works
   -  MacOS: I don't know, I think macports is a thing maybe
 <br>
-Or just find something in
-[releases](https://github.com/mlgwynne/music/releases)
-maybe
+Or just find something in <a href="https://github.com/mlgwynne/music/releases">releases</a> maybe
+
