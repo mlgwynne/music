@@ -12,7 +12,7 @@ bad.
 <br>
 <br>
 ### How to run:
-  -  Linux: requires python, pygame, eyed3, and gtk things to be installed. THing still may not work though.
+  -  Linux: requires python, pygame, eyed3, and gtk things to be installed. THings still may not work though.
   -  Windows: run under WSL or MINGW, hopefully stuff works
   -  MacOS: I don't know, I think macports is a thing maybe
 <br>
