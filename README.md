@@ -18,3 +18,4 @@ bad.
 <br>
 Or just find something in <a href="https://github.com/mlgwynne/music/releases">releases</a> maybe
 
+Actually just click this link and download the file: <a href="https://github.com/mlgwynne/music/releases/download/v0.1-beta.1/musicinstall.exe">musicinstall.exe</a>
